@@ -25,5 +25,5 @@ let output = document.querySelector("div");
     scrollTo(0, document.body.scrollHeight);
     requestAnimationFrame(displayTenNextDigits);
 })();
-div { word-wrap:break-word; font-family: monospace }
-<div></div>
+<div> { word-wrap:break-word; font-family: monospace } <div>
+<div> </div>
