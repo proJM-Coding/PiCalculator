@@ -2,3 +2,4 @@ body {
   height: 100%;
   width: 100%;
 }
+div { word-wrap:break-word; font-family: monospace }
