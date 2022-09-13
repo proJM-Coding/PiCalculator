@@ -6,7 +6,7 @@
         div.WordWrap {
           word-wrap: break-word;
         }
-        #overlay {
+        .overlay {
             position: fixed;
             display: none;
             width: 100%;
@@ -17,7 +17,7 @@
             bottom: 0;
             z-index: 2;
         }
-        #text{
+        .text{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -64,8 +64,8 @@
     </head>
     <body>
         <div class="WordWrap"></div>
-        <div id="overlay" onclick="off()">
-            <div id="text">Overlay Text</div>
+        <div id="overlay" onclick="off()" class="overlay">
+            <div id="text" class="text">Overlay Text</div>
         </div>
     </body>
 </html>
