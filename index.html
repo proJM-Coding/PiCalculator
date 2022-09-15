@@ -8,8 +8,12 @@
         }
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
         function codeAddress() {
+         function on() {
+         document.getElementById("overlay").style.display = "block";
+        }
         function * generateDigitsOfPi() {
         let q = 1n;
         let r = 180n;
@@ -34,19 +38,8 @@
         output.insertAdjacentHTML("beforeend", digits);
         scrollTo(0, document.body.scrollHeight);
         requestAnimationFrame(displayTenNextDigits);
-          var count = 0;
-  if (n >= 1) ++count;
-
-  while (n / 10 >= 1) {
-    n /= 10;
-    ++count;
-  }
-
-  return count;
-}
-
-console.log(digits_count(count));
     })();
+        }
         window.onload = codeAddress;
         </script>
     </head>
