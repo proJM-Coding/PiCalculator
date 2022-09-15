@@ -40,13 +40,6 @@
         requestAnimationFrame(displayTenNextDigits);
         }
     })();
-    const digits = (num, count = 0) => {
-   if(num){
-      return digits(Math.floor(num / 10), ++count);
-   };
-   return count;
-   };
-   console.log(digits("beforeend",digits));
         window.onload = codeAddress;
         </script>
     </head>
