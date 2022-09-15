@@ -39,19 +39,19 @@
         scrollTo(0, document.body.scrollHeight);
         requestAnimationFrame(displayTenNextDigits);
         }
-   const digits = (num, count = 0) => {
+    })();
+    const digits = (num, count = 0) => {
    if(num){
       return digits(Math.floor(num / 10), ++count);
    };
    return count;
    };
    console.log(digits("beforeend",digits));
-    })();
         window.onload = codeAddress;
         </script>
     </head>
     <body>
         <div class="WordWrap"></div>
-        <div id="text">Digits calculated:</div>
+        <div id="Count">Digits calculated:</div>
     </body>
 </html>
