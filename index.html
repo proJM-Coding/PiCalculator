@@ -8,13 +8,9 @@
         }
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
         function codeAddress() {
-         function on() {
-         document.getElementById("overlay").style.display = "block";
-        }
-        function * generateDigitsOfPi() {
+                function * generateDigitsOfPi() {
         let q = 1n;
         let r = 180n;
         let t = 60n;
@@ -38,13 +34,14 @@
         output.insertAdjacentHTML("beforeend", digits);
         scrollTo(0, document.body.scrollHeight);
         requestAnimationFrame(displayTenNextDigits);
-        }
     })();
+        }
         window.onload = codeAddress;
         </script>
     </head>
     <body>
         <div class="WordWrap"></div>
         <div id="Count">Digits calculated:</div>
+        </div>
     </body>
 </html>
