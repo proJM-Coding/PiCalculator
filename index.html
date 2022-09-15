@@ -6,33 +6,10 @@
         div.WordWrap {
           word-wrap: break-word;
         }
-        .overlay {
-            position: fixed;
-            display: none;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 2;
-        }
-        .text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            font-size: 50px;
-            color: white;
-            transform: translate(-50%,-50%);
-            -ms-transform: translate(-50%,-50%);
-        }
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
         function codeAddress() {
-        function on() {
-         document.getElementById("overlay").style.display = "block";
-        }
         function * generateDigitsOfPi() {
         let q = 1n;
         let r = 180n;
@@ -58,14 +35,26 @@
         scrollTo(0, document.body.scrollHeight);
         requestAnimationFrame(displayTenNextDigits);
     })();
+    function digits_count(n) {
+  var count = 0;
+  if (n >= 1) ++count;
+
+  while (n / 10 >= 1) {
+    n /= 10;
+    ++count;
+  }
+
+  return count;
+}
+
+console.log(digits_count(count));
         }
         window.onload = codeAddress;
         </script>
     </head>
     <body>
         <div class="WordWrap"></div>
-        <div id="overlay" onclick="off()" class="overlay">
-            <div id="text" class="text">Overlay Text</div>
+        <h5></h5>
         </div>
     </body>
 </html>
