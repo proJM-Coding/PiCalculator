@@ -36,8 +36,6 @@
         let digits = "";
         for (let i = 0; i < 10; i++) digits += iter.next().value;
         output.insertAdjacentHTML("beforeend", digits);
-        output.insertAdjacentHTML("beforeend");
-        output.insertAdjacentHTML(digits);
         scrollTo(0, document.body.scrollHeight);
         requestAnimationFrame(displayTenNextDigits);
     })();
