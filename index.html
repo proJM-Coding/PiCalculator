@@ -9,8 +9,9 @@
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
+            
         function codeAddress() {
-                function * generateDigitsOfPi() {
+            function * generateDigitsOfPi() {
         let q = 1n;
         let r = 180n;
         let t = 60n;
@@ -23,20 +24,22 @@
             r = u * 10n * (q * (i * 5n - 2n) + r - t * digit);
             q *= 10n * i * (i++ * 2n - 1n);
             t *= u;
+            }
         }
-    }
-    let iter = generateDigitsOfPi();
+        let iter = generateDigitsOfPi();
 
-    let output = document.querySelector("div");
-    (function displayTenNextDigits() {
-        let digits = "";
-        for (let i = 0; i < 10; i++) digits += iter.next().value;
-        output.insertAdjacentHTML("beforeend", digits);
-        scrollTo(0, document.body.scrollHeight);
-        requestAnimationFrame(displayTenNextDigits);
-    })();
-        }
+        let output = document.querySelector("div");
+        (function displayTenNextDigits() {
+            let digits = "";
+            for (let i = 0; i < 10; i++) digits += iter.next().value;
+            output.insertAdjacentHTML("beforeend", digits);
+            scrollTo(0, document.body.scrollHeight);
+            requestAnimationFrame(displayTenNextDigits);
+        })();
+            }
+            
         window.onload = codeAddress;
+            
         </script>
     </head>
     <body>
