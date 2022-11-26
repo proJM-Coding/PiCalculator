@@ -3,6 +3,6 @@ body {
   width: 100%;
 }
 
-.WordWrap {
+div.WordWrap {
   word-wrap: break-word;
 }
